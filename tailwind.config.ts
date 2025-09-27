@@ -9,7 +9,7 @@ const config: Config = {
       colors: {
         'brand-background': '#F7F9FA', // A soft, off-white
         'brand-primary-text': '#2D4356', // A deep, warm slate-blue
-        'brand-subtle-text': '#5A728A',  // A softer, gentle gray-blue
+        'brand-subtle-text': '#1da2abff',  // A softer, gentle gray-blue
         'brand-accent': '#26A69A',      // A sophisticated, muted teal
         'brand-accent-hover': '#00897B', // A slightly richer hover state
       },

@@ -65,7 +65,7 @@ const Testimonials = () => {
             Stories From Our Patients
           </h2>
           <p className="text-lg text-brand-subtle-text max-w-2xl mx-auto">
-            We're proud to have earned the trust of our community. Here's what a few of our patients have to say.
+            We&apos;re proud to have earned the trust of our community. Here&apos;s what a few of our patients have to say.
           </p>
         </div>
 

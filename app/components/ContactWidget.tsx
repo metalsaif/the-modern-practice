@@ -79,7 +79,8 @@ const ContactWidget = () => {
                   >
                     <form onSubmit={handleSend} className="space-y-4">
                       <h3 className="font-display text-2xl font-bold text-brand-primary-text">Send us a message</h3>
-                      <p className="text-brand-subtle-text pb-2">Have a question? We're here to help.</p>
+                      {/* REPLACE 'We're' WITH 'We&apos;re' */}
+                      <p className="text-brand-subtle-text pb-2">Have a question? We&apos;re here to help.</p>
                       <textarea
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}

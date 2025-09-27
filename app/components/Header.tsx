@@ -1,6 +1,7 @@
 "use client";
 
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Header = () => {
   // We'll create a more structured array for easier mapping
@@ -15,10 +16,9 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         
         {/* The logo is now a link to the homepage */}
-        <a href="/" className="text-xl font-bold text-brand-primary-text">
+        <Link href="/" className="text-xl font-bold text-brand-primary-text">
           The Modern Practice
-        </a>
-
+        </Link>
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a 

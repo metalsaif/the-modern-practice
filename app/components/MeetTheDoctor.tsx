@@ -61,7 +61,7 @@ const MeetTheDoctor = () => {
 
           {/* Personal Quote Section - THE HUMAN CONNECTION */}
           <blockquote className="border-l-4 border-brand-accent pl-6 py-2 italic text-brand-subtle-text">
-            "My philosophy is simple: combine precision engineering with a compassionate, human touch. Every patient deserves to feel heard, comfortable, and confident in their care."
+            &quot;My philosophy is simple: combine precision engineering with a compassionate, human touch. Every patient deserves to feel heard, comfortable, and confident in their care.&quot;
           </blockquote>
         </div>
 
