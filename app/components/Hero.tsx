@@ -45,9 +45,9 @@ const Hero = () => {
           <h1 className="font-display text-4xl md:text-6xl font-bold text-brand-accent-hover leading-tight mb-4 [text-shadow:2px_2px_8px_rgba(0,0,0,0.4)]">
             Redefining Your Dental Experience
           </h1>
-          <p className="text-lg md:text-xl text-brand-background font-semibold [text-shadow:1px_1px_4px_rgba(0,0,0,0.4)]">
-            Precision care, unparalleled comfort, and a smile you'll love.
-          </p>
+          <p className="text-lg md:text-xl text-brand-subtle-text font-semibold [text-shadow:1px_1px_4px_rgba(0,0,0,0.4)]">
+  Precision care, unparalleled comfort, and a smile you&apos;ll love.
+</p>
         </motion.div>
       </div>
 
