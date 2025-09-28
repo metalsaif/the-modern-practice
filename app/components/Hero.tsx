@@ -42,7 +42,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h1 className="font-display text-4xl md:text-6xl font-bold text-brand-accent-hover leading-tight mb-4 [text-shadow:2px_2px_8px_rgba(0,0,0,0.4)]">
-            Anxious About the Dentist? Experience Painless, Modern Care.
+            Experience Dentistry That Puts You First
           </h1>
           <p className="text-lg md:text-xl text-white font-semibold [text-shadow:1px_1px_4px_rgba(0,0,0,0.4)]">
             Precision care, unparalleled comfort, and a smile you&apos;ll love.
