@@ -23,16 +23,15 @@ const services: { title: string; description: string; icon: IconType }[] = [
 ];
 
 const ServiceCard = ({ title, description, icon: Icon }: { title: string; description: string; icon: IconType }) => (
-  <div className="group bg-white p-8 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-brand-accent/50">
-    {/* The interactive icon wrapper */}
-    <div className="w-16 h-16 bg-brand-background rounded-full flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-brand-accent">
+  <div className="group bg-white p-8 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-brand-accent/50 text-center">
+    
+    {/* THIS IS THE CHANGED LINE */}
+    <div className="w-16 h-16 bg-brand-background rounded-full flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-brand-accent mx-auto">
       <Icon className="text-brand-accent text-3xl transition-colors duration-300 group-hover:text-white" />
     </div>
     
-    {/* Use the display font for card titles for consistency */}
     <h3 className="font-display text-2xl font-bold text-brand-primary-text mb-3">{title}</h3>
     
-    {/* Use the sans font for the body copy */}
     <p className="text-brand-subtle-text leading-relaxed">{description}</p>
   </div>
 );

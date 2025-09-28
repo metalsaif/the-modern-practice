@@ -7,12 +7,12 @@ const MeetTheDoctor = () => {
   return (
     // Use a clean white background to contrast with the light blue services section
     <section id='doctors' className="bg-white py-24 px-4">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:px-20 items-center">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
-        {/* Image Side */}
-        <div className="w-3/4">
+        {/* Image Side - NOW CENTERED ON MOBILE */}
+        <div className="w-full sm:w-3/4 lg:w-full mx-auto">
           <Image 
-            src="/images/doc1.webp" // Ensure you have a professional headshot
+            src="/images/doc1.webp"
             alt="Dr. Jane Doe, Lead Dentist at The Modern Practice"
             width={600}
             height={700}
@@ -21,8 +21,8 @@ const MeetTheDoctor = () => {
           />
         </div>
 
-        {/* Text & Credentials Side */}
-        <div className="w-full">
+        {/* Text & Credentials Side - NOW CENTERED ON MOBILE */}
+        <div className="w-full text-center lg:text-left">
           <p className="text-brand-accent font-semibold tracking-wider uppercase mb-2">
             Lead Dentist & Founder
           </p>
@@ -30,8 +30,8 @@ const MeetTheDoctor = () => {
             Meet Dr. Jane Doe
           </h2>
 
-          {/* Credentials & Expertise Section - THE TRUST BUILDER */}
-          <div className="flex space-x-8 mb-8 border-t border-b border-gray-200 py-6">
+          {/* Credentials Section - NOW RESPONSIVE */}
+          <div className="flex flex-col md:flex-row items-center justify-center lg:justify-start space-y-6 md:space-y-0 md:space-x-8 mb-8 border-t border-b border-gray-200 py-6">
             <div className="flex items-center space-x-3">
               <FaUserMd className="text-brand-accent text-3xl" />
               <div>

@@ -1,9 +1,7 @@
 import React from 'react';
-// The quote icon will add a professional design touch
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import MagneticCTA from './MagneticCTA';
 
-// Let's enhance our testimonial data structure
 const testimonials = [
   {
     quote: "The most professional and comfortable dental experience I've ever had. My veneers are absolutely perfect!",
@@ -33,17 +31,12 @@ const testimonials = [
 
 const TestimonialCard = ({ quote, name, initials, service }: { quote: string; name: string; initials: string; service: string }) => (
   <div className="relative bg-white p-8 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-    {/* Large, decorative quote icon for visual flair */}
-    <FaQuoteLeft className="absolute top-2 left-2 opacity-30 text-brand-accent text-3xl -z-0" />
+    <FaQuoteLeft className="absolute top-6 left-6 text-brand-background text-6xl -z-0" />
     
-    {/* Ensure the text is on top of the quote icon */}
     <p className="relative z-10 text-brand-subtle-text italic leading-relaxed mb-6">
-      {quote}
+      &quot;{quote}&quot;
     </p>
 
-    <FaQuoteRight className="absolute bottom-20 right-2 opacity-30 text-brand-accent text-3xl -z-0" />
-
-    {/* Humanized Patient Info */}
     <div className="flex items-center space-x-4">
       <div className="w-14 h-14 bg-brand-accent text-white rounded-full flex items-center justify-center font-bold text-xl">
         {initials}
@@ -58,7 +51,8 @@ const TestimonialCard = ({ quote, name, initials, service }: { quote: string; na
 
 const Testimonials = () => {
   return (
-    <section id='reviews' className="bg-white py-24 px-20">
+    // NOTE: I've updated the id to 'testimonials' for link consistency
+    <section id="testimonials" className="bg-white py-24 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl font-bold text-brand-primary-text mb-4">
@@ -69,20 +63,13 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Dynamic Staggered Grid */}
+        {/* THIS IS THE SIMPLIFIED, BALANCED GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.slice(0, 2).map((testimonial) => (
-                <TestimonialCard key={testimonial.name} {...testimonial} />
-            ))}
-            {/* The second column is slightly offset for a more dynamic feel */}
-            <div className="space-y-8 md:mt-12">
-                {testimonials.slice(2, 4).map((testimonial) => (
-                    <TestimonialCard key={testimonial.name} {...testimonial} />
-                ))}
-            </div>
+          {testimonials.map((testimonial) => (
+            <TestimonialCard key={testimonial.name} {...testimonial} />
+          ))}
         </div>
 
-        {/* The Conversion-focused CTA */}
         <MagneticCTA />
       </div>
     </section>

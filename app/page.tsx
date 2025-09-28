@@ -7,12 +7,14 @@ import About from './components/About';
 import ContactWidget from './components/ContactWidget';
 import Footer from './components/Footer';
 import { FadeIn } from './components/FadeIn'; // Make sure FadeIn is imported
+import BookingModal from './components/BookingModal';
+
 
 const Testimonials = dynamic(() => import('./components/Testimonials'));
 
 export default function HomePage() {
   return (
-    <main className="bg-brand-background">
+    <main className="bg-brand-background overflow-x-hidden">
       <Header />
       <Hero />
 
@@ -34,6 +36,7 @@ export default function HomePage() {
       </FadeIn>
       
       <ContactWidget />
+      <BookingModal />
       <Footer />
     </main>
   );

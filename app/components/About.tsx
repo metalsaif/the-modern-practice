@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-// Icons representing our core brand pillars
 import { FaShieldAlt, FaRegSmile, FaUsers } from 'react-icons/fa';
 
 // A helper component for our feature list items
@@ -18,12 +17,11 @@ const FeatureItem = ({ icon: Icon, title, children }: { icon: React.ElementType,
 
 const About = () => {
   return (
-    // We add the id here for the header link to work
-    <section id="about" className="bg-brand-background py-24 px-20">
+    <section id="about" className="bg-brand-background py-24 px-4">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
-        {/* Left Side: The "Difference" Text Content */}
-        <div>
+        {/* Left Side: The "Difference" Text Content - THIS IS THE MODIFIED DIV */}
+        <div className="text-center lg:text-left">
           <h2 className="font-display text-5xl font-bold text-brand-primary-text mb-6">
             The Modern Practice Difference
           </h2>
@@ -31,8 +29,7 @@ const About = () => {
             We believe that a visit to the dentist should be a positive, comfortable, and even enjoyable experience. Our practice was founded on the principle of combining state-of-the-art dental engineering with a compassionate, patient-first philosophy.
           </p>
 
-          {/* Core Value Propositions */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-left">
             <FeatureItem icon={FaShieldAlt} title="Advanced Technology">
               We utilize the latest in dental technology, from 3D imaging to laser dentistry, ensuring precise diagnostics and painless, efficient procedures.
             </FeatureItem>
@@ -48,7 +45,7 @@ const About = () => {
         {/* Right Side: Inviting Interior Image */}
         <div className="w-full h-full min-h-[400px]">
           <Image 
-            src="/images/about.jpeg" // IMPORTANT: Use a high-quality photo of a modern, clean clinic interior
+            src="/images/about.jpeg"
             alt="The modern and clean interior of The Modern Practice"
             width={600}
             height={700}

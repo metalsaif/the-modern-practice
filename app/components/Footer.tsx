@@ -70,7 +70,7 @@ const Footer = () => {
       {/* Bottom Copyright Bar */}
       <div className="bg-black/20 py-4 px-4">
         <div className="container mx-auto text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} The Modern Practice. All Rights Reserved. A Demo by [Your Name/Company].
+          &copy; {new Date().getFullYear()} The Modern Practice. All Rights Reserved. A Demo by Saif Rahman.
         </div>
       </div>
     </footer>
